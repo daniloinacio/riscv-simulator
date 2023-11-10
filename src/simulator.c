@@ -8,8 +8,32 @@ IDE: Atom
 #include <stdint.h>
 #include <stdlib.h>
 
+//memoria
+int32_t mem[MEM_SIZE];
+
+//banco de registradores
+int32_t breg[REG_SIZE];
+
+//registradores adicionais
+uint32_t pc;
+uint32_t ri;
+
 //chamada para sair
 int CALLEXIT = FALSE;
+
+//campos das instruções
+uint8_t opcode;
+uint32_t rs1;
+uint32_t rs2;
+uint32_t rd;
+uint32_t shamt;
+uint8_t funct3;
+uint8_t funct7;
+int32_t imm12_i;
+int32_t imm12_s;
+int32_t imm13;
+int32_t imm20_u;
+int32_t imm21;
 
 //inicializa os registradores
 void set_registers(){
