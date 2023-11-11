@@ -6,7 +6,9 @@ Run
 ----
 
 **1 -** Open the terminal in current directory.
+
 **2 -** Execute the  make command.
+
 **3 -** For run the program write the command below:
 
 ```bash
